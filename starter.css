@@ -1,0 +1,46 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main_container {
+  height: 100vh;
+  background-color: #e0e1dd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 8rem;
+  color: #1b263b;
+}
+
+span {
+  color: #778da9;
+}
+
+h2 {
+  color: #1b263b;
+}
+
+.button {
+  height: 25vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  height: 10vh;
+  width: 45vw;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  color: #778da9;
+  border: 3px solid #778da9;
+  background-color: #1b263b;
+  cursor: pointer;
+}
