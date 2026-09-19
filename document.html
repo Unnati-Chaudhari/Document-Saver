@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="document.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
@@ -24,79 +27,16 @@
       <div class="document_container">
         <div class="doc_div" id="renewal_doc">
           <h2>⚠️Upcoming Renewal</h2>
-          <div class="document_list">
-            <!-- document card structure -->
-            <div class="document_card">
-              <div class="doc_name">proto</div>
-              <p class="doc_number"><span>Number:</span></p>
-              <p class="issue_date"><span>Issue-date:</span></p>
-              <p class="expiry_date"><span>Expiry-date:</span></p>
-              <div class="document_status">
-                <span>Active</span>
-              </div>
-              <div class="document_actions">
-                <button class="view_btn">
-                  <i class="fa-solid fa-eye"></i>
-                  View
-                </button>
-
-                <button class="edit_btn">
-                  <i class="fa-solid fa-pen"></i>
-                  Edit
-                </button>
-              </div>
-            </div>
-          </div>
+          <div class="document_list" id="renewalList"></div>
         </div>
         <div class="doc_div" id="expired_doc">
           <h2>🚨Expired Documents</h2>
-          <div class="document_list">
-            <div class="document_card">
-              <div class="doc_name"></div>
-              <p class="doc_number"><span>Number:</span></p>
-              <p class="issue_date"><span>Issue-date:</span></p>
-              <p class="expiry_date"><span>Expiry-date:</span></p>
-              <div class="document_status">
-                <span>Active</span>
-              </div>
-              <div class="document_actions">
-                <button class="view_btn">
-                  <i class="fa-solid fa-eye"></i>
-                  View
-                </button>
-
-                <button class="edit_btn">
-                  <i class="fa-solid fa-pen"></i>
-                  Edit
-                </button>
-              </div>
-            </div>
-          </div>
+          <div class="document_list" id="expiredList"></div>
         </div>
+
         <div class="doc_div" id="all_doc">
           <h2>📃All Documents</h2>
-          <div class="document_list">
-            <div class="document_card">
-              <div class="doc_name"></div>
-              <p class="doc_number"><span>Number:</span></p>
-              <p class="issue_date"><span>Issue-date:</span></p>
-              <p class="expiry_date"><span>Expiry-date:</span></p>
-              <div class="document_status">
-                <span>Active</span>
-              </div>
-              <div class="document_actions">
-                <button class="view_btn">
-                  <i class="fa-solid fa-eye"></i>
-                  View
-                </button>
-
-                <button class="edit_btn">
-                  <i class="fa-solid fa-pen"></i>
-                  Edit
-                </button>
-              </div>
-            </div>
-          </div>
+          <div class="document_list" id="alldocList"></div>
         </div>
 
         <div class="nav_two">

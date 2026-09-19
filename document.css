@@ -1,6 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .main_container {
@@ -15,18 +16,20 @@
   align-items: center;
 }
 
-.search_box,
-input {
-  height: 6vh;
+.search_box {
   width: 50vw;
+}
+
+.search_box input {
+  height: 6vh;
+  width: 100%;
   border-radius: 50px;
+  box-sizing: border-box;
 }
 
 input {
-  border: none;
   border: 2px solid #778da9;
   color: #778da9;
-  /* background-color: black; */
   font-size: 1.3rem;
   padding-left: 1.5rem;
 }
@@ -39,12 +42,10 @@ input {
 
 .doc_div {
   height: 27vh;
-  /* overflow-y: auto; */
   margin-top: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
   border-bottom: 1px solid #778da9;
-  /* flex-direction: row; */
 }
 
 h2 {
@@ -57,30 +58,23 @@ h2 {
   display: flex;
   flex-direction: row;
   overflow-y: auto;
-  /* overflow: hidden; */
   scrollbar-width: none;
 }
 
 .document_card {
   height: 20vh;
   width: 20vw;
-
   border: 3px solid #778da9;
   border-radius: 10px;
-
   margin-right: 1rem;
   padding: 0.5rem;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-
   flex-shrink: 0;
   position: relative;
-
   box-sizing: border-box;
-
   transition: 0.2s ease;
 }
 
@@ -104,10 +98,8 @@ h2 {
 .document_status span {
   padding: 0.3rem 0.6rem;
   border-radius: 20px;
-
   background-color: #dff5e1;
   color: #267a35;
-
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -119,9 +111,23 @@ h2 {
   color: #1b263b;
 }
 
+.document_status.active span {
+  background-color: #dff5e1;
+  color: #267a35;
+}
+
+.document_status.upcoming span {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.document_status.expired span {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
 .nav_two {
   height: 10vh;
-
   padding-left: 3rem;
   display: flex;
   justify-content: flex-start;
@@ -139,34 +145,26 @@ h2 {
 }
 
 .document_actions {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .document_actions button {
-    padding: 0.4rem 0.7rem;
-
-    border: none;
-    border-radius: 6px;
-
-    font-size: 0.8rem;
-    cursor: pointer;
-
-    transition: 0.2s ease;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
-.view_btn {
-    background-color: #e0e1dd;
-    color: #222;
+.delete_btn {
+  background-color: #f8d7da;
+  color: #842029;
 }
 
 .edit_btn {
-    background-color: #778da9;
-    color: #1b263b;
-}
-
-.view_btn:hover,
-.edit_btn:hover {
-    transform: translateY(-1px);
+  background-color: #778da9;
+  color: #1b263b;
 }
