@@ -2,113 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="starter.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="main_container">
-      <div class="heading">
-        <h1>Document Saver</h1>
-        <p>Keep your documents organized</p>
-      </div>
-
-      <div class="content_card">
-        <div class="container_one">
-          <h2>Keep track on your documents and never miss a renewal!!</h2>
-          <div class="card_div">
-            <!-- For total number of documents -->
-            <div class="card_one" id="card">
-              <div class="topic_div">
-                <h2>📃Total Documents</h2>
-              </div>
-              <div class="count_div">
-                <div class="number_div" id="totalCount">0</div>
-              </div>
-            </div>
-
-            <!-- For expiring soon documents -->
-            <div class="card_two" id="card">
-              <div class="topic_div">
-                <h2>⚠️Expiring Soon</h2>
-              </div>
-              <div class="count_div">
-                <div class="number_div" id="upcomingCount">0</div>
-              </div>
-            </div>
-
-            <!-- For expired documents -->
-            <div class="card_three" id="card">
-              <div class="topic_div">
-                <h2>❌Expired Documents</h2>
-              </div>
-              <div class="count_div">
-                <div class="number_div" id="expiredCount">0</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- For directing to next page -->
-          <div class="next_page_div">
-            <a href="document.html">
-              <button class="next_page_button">View Documents →</button>
-            </a>
-          </div>
-        </div>
-
-        <!-- for form -->
-        <div class="container_two">
-          <form class="add_doc_form" id="documentform">
-            <div class="form_heading">
-              <h2><i class="fa-solid fa-plus"></i>Add new documnets</h2>
-            </div>
-
-            <div class="form_content">
-              <div class="form_box">
-                <label>Document Name<span>*</span></label>
-                <input type="text" id="document_name" />
-                <p class="doc_name_error"></p>
-              </div>
-
-              <div class="form_box">
-                <label>Document Number<span>*</span></label>
-                <input type="text" id="document_number" />
-                <p class="doc_num_error"></p>
-              </div>
-
-              <div class="form_box">
-                <label>Issue Date<span>*</span></label>
-                <input type="date" id="issue_date" />
-                <p class="doc_issue_date_error"></p>
-              </div>
-
-              <div class="form_box">
-                <label>Expiry Date<span>*</span></label>
-                <input type="date" id="expiry_date" />
-                <p class="doc_expiry_date_error">.</p>
-              </div>
-
-              <div class="form_box" id="form_button">
-                <button type="submit" class="form_submit_button">
-                  Add Document
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
+      <h1>Document <span>S</span>aver</h1>
+      <h2>Keep your documents organized</h2>
+      <div class="button">
+        <a href="dashboard.html">
+          <button>Get Started</button>
+        </a>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <footer>
+      <div class="info_div">
+        <a>Built by-Unnati Chaudhari</a>
+        <a>© 2026 Document Saver</a>
+        <a href="https://github.com/Unnati-Chaudhari">@Unnati-Chaudhari</a>
+      </div>
+    </footer>
   </body>
 </html>
+
+
