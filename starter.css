@@ -5,7 +5,7 @@
 }
 
 .main_container {
-  height: 100vh;
+  height: 94vh;
   background-color: #e0e1dd;
   display: flex;
   flex-direction: column;
@@ -43,4 +43,18 @@ button {
   border: 3px solid #778da9;
   background-color: #1b263b;
   cursor: pointer;
+}
+
+.info_div {
+  height: 6vh;
+  background-color: #1b263b;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+    color: #e0e1dd;
+    font-size: 15px;
+    text-decoration: none;
 }
