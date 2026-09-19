@@ -1,0 +1,172 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.main_container {
+  height: 100vh;
+  background-color: #e0e1dd;
+}
+
+.nav {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_box,
+input {
+  height: 6vh;
+  width: 50vw;
+  border-radius: 50px;
+}
+
+input {
+  border: none;
+  border: 2px solid #778da9;
+  color: #778da9;
+  /* background-color: black; */
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+}
+
+.document_container {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.doc_div {
+  height: 27vh;
+  /* overflow-y: auto; */
+  margin-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-bottom: 1px solid #778da9;
+  /* flex-direction: row; */
+}
+
+h2 {
+  padding-bottom: 0.5rem;
+  color: #1b263b;
+}
+
+.document_list {
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  /* overflow: hidden; */
+  scrollbar-width: none;
+}
+
+.document_card {
+  height: 20vh;
+  width: 20vw;
+
+  border: 3px solid #778da9;
+  border-radius: 10px;
+
+  margin-right: 1rem;
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  flex-shrink: 0;
+  position: relative;
+
+  box-sizing: border-box;
+
+  transition: 0.2s ease;
+}
+
+.document_card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.doc_name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1b263b;
+}
+
+.document_status {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+}
+
+.document_status span {
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+
+  background-color: #dff5e1;
+  color: #267a35;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.doc_number span,
+.issue_date span,
+.expiry_date span {
+  font-weight: 600;
+  color: #1b263b;
+}
+
+.nav_two {
+  height: 10vh;
+
+  padding-left: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dashboard {
+  height: 5vh;
+  width: 9vw;
+  border: none;
+  border-radius: 50px;
+  color: #e0e1dd;
+  background-color: #1b263b;
+  cursor: pointer;
+}
+
+.document_actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.document_actions button {
+    padding: 0.4rem 0.7rem;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.view_btn {
+    background-color: #e0e1dd;
+    color: #222;
+}
+
+.edit_btn {
+    background-color: #778da9;
+    color: #1b263b;
+}
+
+.view_btn:hover,
+.edit_btn:hover {
+    transform: translateY(-1px);
+}

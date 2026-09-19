@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="document.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="nav">
+        <div class="search_box">
+          <input type="text" id="search_doc" placeholder="🔍Search document" />
+        </div>
+      </div>
+
+      <div class="document_container">
+        <div class="doc_div" id="renewal_doc">
+          <h2>⚠️Upcoming Renewal</h2>
+          <div class="document_list">
+            <!-- document card structure -->
+            <div class="document_card">
+              <div class="doc_name">proto</div>
+              <p class="doc_number"><span>Number:</span></p>
+              <p class="issue_date"><span>Issue-date:</span></p>
+              <p class="expiry_date"><span>Expiry-date:</span></p>
+              <div class="document_status">
+                <span>Active</span>
+              </div>
+              <div class="document_actions">
+                <button class="view_btn">
+                  <i class="fa-solid fa-eye"></i>
+                  View
+                </button>
+
+                <button class="edit_btn">
+                  <i class="fa-solid fa-pen"></i>
+                  Edit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doc_div" id="expired_doc">
+          <h2>🚨Expired Documents</h2>
+          <div class="document_list">
+            <div class="document_card">
+              <div class="doc_name"></div>
+              <p class="doc_number"><span>Number:</span></p>
+              <p class="issue_date"><span>Issue-date:</span></p>
+              <p class="expiry_date"><span>Expiry-date:</span></p>
+              <div class="document_status">
+                <span>Active</span>
+              </div>
+              <div class="document_actions">
+                <button class="view_btn">
+                  <i class="fa-solid fa-eye"></i>
+                  View
+                </button>
+
+                <button class="edit_btn">
+                  <i class="fa-solid fa-pen"></i>
+                  Edit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="doc_div" id="all_doc">
+          <h2>📃All Documents</h2>
+          <div class="document_list">
+            <div class="document_card">
+              <div class="doc_name"></div>
+              <p class="doc_number"><span>Number:</span></p>
+              <p class="issue_date"><span>Issue-date:</span></p>
+              <p class="expiry_date"><span>Expiry-date:</span></p>
+              <div class="document_status">
+                <span>Active</span>
+              </div>
+              <div class="document_actions">
+                <button class="view_btn">
+                  <i class="fa-solid fa-eye"></i>
+                  View
+                </button>
+
+                <button class="edit_btn">
+                  <i class="fa-solid fa-pen"></i>
+                  Edit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav_two">
+          <a href="index.html">
+            <button class="dashboard">Back to dashboard</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

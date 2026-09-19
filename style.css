@@ -1,16 +1,18 @@
 * {
   margin: 0%;
   padding: 0%;
+  /* background-color: #e0e1dd; */
 }
 
 .main_container {
   height: 100vh;
+  background-color: #e0e1dd;
 }
 
 .heading {
   height: 10vh;
   width: 100vw;
-  background-color: black;
+  background-color: #1b263b;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,12 +20,12 @@
 }
 
 h1 {
-  color: aliceblue;
+  color: #e0e1dd;
   font-size: 2.5rem;
 }
 
 p {
-  color: grey;
+  color: #e0e1dd;
 }
 
 .content_card {
@@ -37,10 +39,12 @@ p {
 .container_one {
   height: 90vh;
   width: 70vw;
-  border-right: 1px solid black;
+  border-right: 1px solid #778da9;
+  flex-direction: column;
 }
 
 h2 {
+  color: #415a77;
   padding-top: 1rem;
   margin-left: 1rem;
 }
@@ -56,7 +60,7 @@ h2 {
 #card {
   height: 50vh;
   width: 20vw;
-  border: 4px solid grey;
+  border: 4px solid #778da9;
   border-radius: 1rem;
 }
 
@@ -85,6 +89,27 @@ h2 {
   align-items: center;
 }
 
+
+.next_page_div {
+    height: 10vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next_page_button {
+    height: 8vh;
+    width: 60vw;
+    border: none;
+    border-radius: 1rem;
+    color: #e0e1dd;
+    background-color: #1b263b;
+    cursor: pointer;
+
+}
+
+
 /* for form */
 .container_two {
   height: 90vh;
@@ -98,13 +123,13 @@ h2 {
   height: 85vh;
   width: 25vw;
   border-radius: 1rem;
-  border: 3px solid black;
+  border: 3px solid #778da9;
 }
 
 .form_heading {
   height: 10vh;
   width: 25vw;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #778da9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +157,7 @@ h2 {
 
 label {
   font-size: 1.3rem;
-  color: grey;
+  color: #415a77;
 }
 
 span {
@@ -146,9 +171,11 @@ input {
   width: 21vw;
   padding-left: 1rem;
   font-size: 1rem;
+  color: #415a77;
   outline: none;
-  border: 2px solid gray;
+  border: 2px solid #415a77;
   border-radius: 10px;
+  background-color: #e0e1dd;
 }
 
 form p {
@@ -162,13 +189,16 @@ form p {
   align-items: center;
 }
 
-button {
+.form_submit_button {
   height: 6vh;
   width: 15vw;
   border: none;
-  border: 3px solid black;
+  border: 3px solid #1b263b;
   border-radius: 50px;
-  background-color: lightgrey;
+  background-color: #e0e1dd;
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+
+/* next page */

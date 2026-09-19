@@ -54,11 +54,18 @@
               </div>
             </div>
           </div>
+
+          <!-- For directing to next page -->
+          <div class="next_page_div">
+            <a href="document.html">
+              <button class="next_page_button">View Documents →</button>
+            </a>
+          </div>
         </div>
 
         <!-- for form -->
         <div class="container_two">
-          <form class="add_doc_form">
+          <form class="add_doc_form" id="documentform">
             <div class="form_heading">
               <h2><i class="fa-solid fa-plus"></i>Add new documnets</h2>
             </div>
@@ -66,38 +73,39 @@
             <div class="form_content">
               <div class="form_box">
                 <label>Document Name<span>*</span></label>
-              <input type="text" />
-              <p class="doc_name_error"></p>
+                <input type="text" id="document_name" />
+                <p class="doc_name_error"></p>
               </div>
 
               <div class="form_box">
                 <label>Document Number<span>*</span></label>
-              <input type="text" />
-              <p class="doc_num_error"></p>
+                <input type="text" id="document_number" />
+                <p class="doc_num_error"></p>
               </div>
 
               <div class="form_box">
                 <label>Issue Date<span>*</span></label>
-              <input type="date" />
-              <p class="doc_issue_date_error"></p>
+                <input type="date" id="issue_date" />
+                <p class="doc_issue_date_error"></p>
               </div>
 
               <div class="form_box">
                 <label>Expiry Date<span>*</span></label>
-              <input type="date" />
-              <p class="doc_expiry_date_error">.</p>
+                <input type="date" id="expiry_date" />
+                <p class="doc_expiry_date_error">.</p>
               </div>
 
               <div class="form_box" id="form_button">
-                <button type="submit">Add Document</button>
+                <button type="submit" class="form_submit_button">
+                  Add Document
+                </button>
               </div>
-
-
-
             </div>
           </form>
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
